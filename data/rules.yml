@@ -1,0 +1,46 @@
+version: "2.0"
+
+rules:
+
+- rule: Dizer que está bem sempre que o usuário perguntar
+  steps:
+  - intent: voce_esta_bem
+  - action: utter_estou_bem
+  - action: utter_posso_ajudar
+
+- rule: Dizer adeus sempre que o usuário se despedir
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+  - action: action_restart
+
+- rule: Dizer 'Eu sou um Bot' sempre que o usuário trouxer um desafio
+  steps:
+  - intent: voce_e_um_robo
+  - action: utter_eusouumbot
+
+- rule: Fallback Padrão
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+- rule: Mostrar SUV sempre que o usuário pedir
+  steps:
+  - intent: modelo_SUV
+  - action: utter_carros_disponiveis_SUV_GLA
+  - action: utter_carros_disponiveis_SUV_GLB
+  - action: utter_carros_disponiveis_SUV_GLE
+
+- rule: Mostrar hatch sempre que o usuário pedir
+  steps:
+  - intent: modelo_hatch
+  - action: utter_carros_disponiveis_hatch_classeA
+
+- rule: Mostrar sedan sempre que o usuário pedir
+  steps:
+  - intent: modelo_sedan
+  - action: utter_carros_disponiveis_sedan_classeA
+  - action: utter_carros_disponiveis_sedan_classeE
+
+
+

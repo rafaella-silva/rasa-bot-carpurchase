@@ -1,0 +1,131 @@
+version: "2.0"
+
+intents:
+  - saudacao
+  - voce_esta_bem
+  - feliz
+  - triste
+  - despedida
+  - voce_e_um_robo
+  - compra_carro
+  - modelo_SUV
+  - modelo_hatch
+  - modelo_sedan
+
+responses:
+  utter_saudacao:
+  - text: "Olá! Tudo bem?"
+  - text: "Oi, querido(a)! Como você está?"
+  - text: "Olá, meu bem! Tudo certo?"
+
+  utter_estou_bem:
+  - text: "Estou bem, obrigada por perguntar!"
+  - text: "Estou bem, obrigada."
+  - text: "Feliz por você está aqui comigo!"
+  - text: "Melhor agora!"
+  - text: "Ótima com sua presença!"
+
+  utter_feliz:
+  - text: "Que ótimo! Fico feliz também!"
+  - text: "Maravilha!!!"
+  - text: "Que bom! :D"
+
+  utter_triste:
+  - text: "É uma pena! Mas logo tudo ficará bem."
+  - text: "Não se preocupe, farei você ficar melhor."
+  - text: "Estou aqui para melhorar isto!"
+
+  utter_posso_ajudar:
+  - text: "Como posso te ajudar?"
+  - text: "Em que posso te ajudar?"
+  - text: "Como posso lhe auxiliar?"
+
+  utter_opcoes_carro:
+  - text: "Que maravilha! Vou te mostrar as opções disponíveis no momento. Sua preferência é por sedans, hatchs ou SUVs?"
+  - text: "Ótimo! Vou te informar as opções disponíveis. Sua preferência é por sedans, hatchs ou SUVs?"
+  - text: "Que bom que nos procurou, somos líder no mercado! Já te mostro as melhores opções. Sua preferência é por sedans, hatchs ou SUVs?"
+  - text: "Ficamos muito felizes por nos procurar! Vou te mostrar as opções disponíveis. Sua preferência é por sedans, hatchs ou SUVs?"
+
+  utter_carros_disponiveis_SUV_GLA:
+  - text: |-
+      **Nossas SUVs disponíveis são:**
+  
+      **GLA 200 AMG 2021**
+      Especificações:
+      Motor: 1.3 turbo
+      163 cv
+      Preço: R$ 325.900,00
+
+    image: "https://quatrorodas.abril.com.br/wp-content/uploads/2020/05/20C0046_013.jpg?quality=70&strip=info" 
+    
+  utter_carros_disponiveis_SUV_GLB:
+  - text: |-
+      **GLB 200 AMG 2021**
+      Especificações:
+      Motor: 1.3 turbo 
+      163 cv
+      Preço: R$ 290.900,00
+  
+    image: "https://cdn.motor1.com/images/mgl/2oy1k/s3/mercedes-benz-glb.jpg"
+
+  
+  utter_carros_disponiveis_SUV_GLE:
+  - text: |-
+      **GLE 350 AMG 2021**
+      Especificações:
+      Motor: 3.0 V6 (diesel) 
+      258 cv
+      Preço: R$ 407.900,00
+  
+    image: "https://s2.glbimg.com/zLVEfA_6FsE4o6SZpZfyC9x_GBI=/0x0:1300x824/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/D/a/VFbSGATvOBnDhV5zxG4g/mercedes-benz-gle-2019-02.jpg"
+
+
+  utter_carros_disponiveis_hatch_classeA:
+  - text: |-
+      **Nosso hatch disponível:**
+  
+      **Mercedes-Benz Classe A 250 2022**
+      Especificações:
+      Motor: 2.0 turbo
+      224 cv
+      Preço: R$ 319.900,00
+
+    image: "https://garagem360.com.br/wp-content/uploads/2021/06/20190123_af29f3550e8743998b023dfffa794362_img-8324.jpg"
+
+  utter_carros_disponiveis_sedan_classeA:
+  - text: |-
+      **Nossos sedans disponíveis são:**
+  
+      **Classe A Sedan**
+      Especificações:
+      Motor: 2.0
+      306 cv
+      Preço: R$ 423.900,00
+
+    image: "https://www2.mercedes-benz.com.br/passengercars/content-pool/marketing-pool/product-page-stages/a-class-sedan-v177-stage-specifications/_jcr_content/par/stageelement.MQ6.0.20191001193320.jpeg" 
+    
+  utter_carros_disponiveis_sedan_classeE:
+  - text: |-
+      **Classe E Sedan**
+      Especificações:
+      Motor: 4.0
+      612 cv
+      Preço: R$ 1.400.900,00
+  
+    image: "https://www2.mercedes-benz.com.br/passengercars/mercedes-benz-cars/models/e-class/saloon-w213-fl/explore/design-teaser/_jcr_content/par/teaserbox/teaserelement1/teaserelement/image.MQ6.6.20210816185702.jpeg"
+    
+  utter_despedida:
+  - text: "Adeus!"
+  - text: "Até mais!"
+  - text: "Tchau, tchau!" 
+  - text: "Tenha um ótimo dia!"
+
+  utter_eusouumbot:
+  - text: "Eu sou um Bot, desenvolvido pela Rafa."
+
+  utter_fallback:
+  - text: "Não entendi o que você quis dizer. Poderia reformular por favor?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

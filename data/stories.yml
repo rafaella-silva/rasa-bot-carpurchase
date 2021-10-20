@@ -1,0 +1,89 @@
+version: "2.0"
+
+stories:
+
+- story: caminho feliz SUV
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - action: utter_posso_ajudar
+  - intent: compra_carro
+  - action: utter_opcoes_carro
+  - intent: modelo_SUV
+  - action: utter_carros_disponiveis_SUV_GLA
+  - action: utter_carros_disponiveis_SUV_GLB
+  - action: utter_carros_disponiveis_SUV_GLE
+
+
+- story: caminho triste SUV
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: triste
+  - action: utter_triste
+  - action: utter_posso_ajudar
+  - intent: compra_carro
+  - action: utter_opcoes_carro
+  - intent: modelo_SUV
+  - action: utter_carros_disponiveis_SUV_GLA
+  - action: utter_carros_disponiveis_SUV_GLB
+  - action: utter_carros_disponiveis_SUV_GLE
+
+- story: caminho feliz hatch
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - action: utter_posso_ajudar
+  - intent: compra_carro
+  - action: utter_opcoes_carro
+  - intent: modelo_hatch
+  - action: utter_carros_disponiveis_hatch_classeA
+
+
+- story: caminho triste hatch
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: triste
+  - action: utter_triste
+  - action: utter_posso_ajudar
+  - intent: compra_carro
+  - action: utter_opcoes_carro
+  - intent: modelo_hatch
+  - action: utter_carros_disponiveis_hatch_classeA
+
+- story: caminho feliz sedan
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: feliz
+  - action: utter_feliz
+  - action: utter_posso_ajudar
+  - intent: compra_carro
+  - action: utter_opcoes_carro
+  - intent: modelo_sedan
+  - action: utter_carros_disponiveis_sedan_classeA
+  - action: utter_carros_disponiveis_sedan_classeE
+
+
+- story: caminho triste sedan
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: triste
+  - action: utter_triste
+  - action: utter_posso_ajudar
+  - intent: compra_carro
+  - action: utter_opcoes_carro
+  - intent: modelo_sedan
+  - action: utter_carros_disponiveis_sedan_classeA
+  - action: utter_carros_disponiveis_sedan_classeE
+
+
+
+  
+

@@ -1,0 +1,95 @@
+version: "2.0"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá
+    - Oi
+    - Bom dia 
+    - boa tarde
+    - boa noite
+    - opa
+    - eai
+
+- intent: voce_esta_bem
+  examples: |
+    - tudo bem com você?
+    - e você como vai?
+    - tudo bem ?
+    - você está bem?
+    - como vai?
+
+- intent: feliz
+  examples: |
+    - estou bem 
+    - bem 
+    - feliz 
+    - ótima
+    - ótimo 
+    - estou muito bem 
+    - estou muito feliz 
+    - maravilhosa 
+    - maravilhoso 
+    - tudo bem
+  
+- intent: triste
+  examples: |
+    - triste
+    - mal 
+    - estou triste 
+    - não estou bem 
+    - não muito bem 
+    - pra baixo
+    - infeliz
+    - deprimido 
+
+- intent: compra_carro
+  examples: |
+    - gostaria de comprar um carro
+    - estou querendo comprar um carro
+    - estou em busca de um carro
+    - quero um carro novo
+    - vou comprar um carro
+    - quais carros vocês tem disponíveis?
+    - gostaria de ver os modelos de carros
+
+- intent: modelo_SUV
+  examples: |
+    - prefiro SUV
+    - gosto de SUV
+    - SUV
+    - quero uma SUV
+    - gostaria de comprar uma SUV
+
+- intent: modelo_hatch
+  examples: |
+    - prefiro hatch
+    - gosto de hatch
+    - hatch
+    - quero um hatch
+    - gostaria de comprar um hatch
+
+- intent: modelo_sedan
+  examples: |
+    - prefiro sedans
+    - gosto de sedans
+    - sedan
+    - quero um sedan
+    - gostaria de comprar um sedan
+
+- intent: despedida
+  examples: |
+    - adeus 
+    - tchau  
+    - xau 
+    - valeu 
+    - até mais 
+
+- intent: voce_e_um_robo
+  examples: |
+    - voce é um robô?
+    - quem é você?  
+    - com quem eu falo?
+    - quem criou você? 
+
+
